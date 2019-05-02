@@ -1,0 +1,206 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+input:focus{
+	outline:none;
+}
+@font-face {
+  font-family: "Brandon Grotesque Regular Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Regular Italic"), url("fonts/brandon-grotesque-regular-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Brandon Grotesque Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Thin Italic"), url("fonts/brandon-grotesque-thin-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Brandon Grotesque Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Light"), url("fonts/brandon-grotesque-light.woff") format("woff");
+}
+@font-face {
+  font-family: "Brandon Grotesque Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Light Italic"), url("fonts/brandon-grotesque-light-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Brandon Grotesque Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Medium Italic"), url("fonts/brandon-grotesque-medium-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Brandon Grotesque Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Bold Italic"), url("fonts/brandon-grotesque-bold-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Brandon Grotesque Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Black"), url("fonts/brandon-grotesque-black.woff") format("woff");
+}
+
+body{
+	cursor: url(cursor-white.png), auto;
+	height:100vh;
+	font-family: "Cormorant", serif;
+}
+.pointer{
+	position: absolute;
+	top:0;left:0;
+	height:40px;
+	width:40px;
+	background-color: rgba(255, 255, 255, .1);
+	border:1px solid rgba(255, 255, 255, .1);
+	border-radius:50%;
+}
+div{
+	display: block;
+}
+.logo .long, .logo .wide, .logo .dot{
+	position: fixed;
+	background: rgba(255, 255, 255, 0.8);
+	z-index:1400;
+}
+.logo .long{
+	top:0;
+	left:0;
+	height:150px;
+	width:50px;
+}
+.logo .wide{
+	top:0;
+	left:50px;
+	width:100px;
+	height:50px;
+}
+.logo .dot{
+	width:50px;
+	height:50px;
+	right:0;
+	bottom:0;
+}
+main{
+	position: fixed;
+	background:url("background.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 15px solid #28344b;
+	top:0;
+	left:0;
+	overflow:hidden;
+	height:100vh;	
+	width:100vw;
+	z-index:1000;
+}
+.content .card svg{
+	display: block;
+	fill:white;
+	position: relative;
+	z-index:1300;
+	width:250px;
+	margin:auto;
+	margin-bottom: 12px;
+}
+.content{
+	position: fixed;
+	top:0;
+	left: 0;
+	display:flex;
+	justify-content: center;
+	height:100vh;
+	width:100%;
+	align-items:center;
+	z-index:1200;
+	color: rgba(255, 255, 255, 0.8);
+	background:rgba(0, 12, 25, 0.9);
+	border: 15px solid transparent;
+}
+.content .card{
+	position:relative;
+	min-height:100px;
+	max-width:370px;
+	z-index:1300;
+	padding:50px;
+	border-radius: 5px;
+	transition: 1s all ease;
+}
+p{
+	text-align: center;
+	font-family: "Brandon Grotesque Light", sans-serif;
+	font-weight:100;
+	line-height:1.5;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.intro{
+	text-transform: uppercase;
+	bottom:12px;
+	letter-spacing:2px;
+	position: fixed;
+	left:0;
+	text-align: center;
+	font-size:14px;
+	width:100%;
+	min-width:300px;
+}
+.tagline{
+	font-family: 'Cormorant Upright', serif;
+	font-size:22px;
+	margin-bottom:24px;
+	font-style: italic;
+	padding:0;
+	color: rgba(255, 255, 255, 0.8);
+}
+input{
+	background:transparent;
+	border-radius:100px;
+	margin-bottom:24px;
+	text-align:center;
+	position:static;
+	height:48px;
+	width: 100%;
+	display: block;
+	color: rgb(243, 156, 18);
+	border-color: rgb(243, 156, 18);
+	font-family: "Brandon Grotesque Light", sans-serif;
+	font-size:19px;
+	z-index:1300;
+	border-width:1px;
+	border-style:solid;
+	padding-right:48px; 
+}
+.input-cover{
+	display: flex;
+	flex-direction: column;
+}
+.input-cover button{
+	position: absolute;
+	height:48px;
+	width:48px;
+	border-radius: 50px;
+	background-color:rgb(243, 156, 18);
+	border:0px;
+	align-self:flex-end;
+	z-index:1400;
+	border:1px;
+	border-color: rgb(243, 156, 18);
+	border-style:solid;
+}
+.input-cover button:hover{
+
+	cursor: pointer;
+	background-color: #000c19;
+	color:white;
+}
